@@ -1,0 +1,266 @@
+@charset "utf-8";
+
+h1{display: none;}
+#wrap{
+    margin: 0 auto;
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 999;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border-bottom: 3px solid rgb(31, 31, 31);
+}
+nav>.gnb{
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+    height: 20px;
+    margin-top: 15px;
+    line-height: 20px;
+    font-size: 10px;
+    font-family: "Malgun Gothic";
+}
+nav>.gnb>.line>a{
+    display: block;
+    width: 60px;
+    height: 20px;
+    margin-right: -10px;
+    text-indent: -9999px;
+    background-image: url(../images/line_logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 center;
+}
+
+nav>.lng{
+    display: block;
+    position: relative;
+    width: 130px;
+    height: 200px;
+    margin-top: 15px;
+    font-size: 10px;
+}
+nav>.lng>.lngSlt{
+    display: block;
+    width: 100px;
+    height: 12px;
+}
+nav>.lng>.lngSlt>a{
+    display: block;
+    position: relative;
+    width: 130px;
+    height: 18px;
+    line-height: 18px;
+    border: 1px solid #a5a5a5;
+}
+nav>.lng>.lngSlt>a:after{
+    display: block;
+    position: absolute;
+    left: 110px;
+    top: 6px;
+    width: 6px;
+    height: 4px;
+    margin-left: 2px;
+    background-image: url(../images/line_button.png);
+    content: '';
+}
+nav>.lng>.lngSlt:hover>a{background-color: #c2c2c2;}
+
+nav>.lng>.lngGnb{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 23px;
+    margin-top: -3px;
+    background-color: #fff;
+    border-left: 1px solid #a5a5a5;
+    border-right: 1px solid #a5a5a5;
+    border-bottom: 1px solid #a5a5a5;
+}
+nav>.lng:hover>.lngGnb{display: block;}
+nav>.lng>.lngGnb>li>a{
+    display: block;
+    width: 130px;
+    height: 23px;
+    margin-bottom: 5px;
+    line-height: 30px;
+}
+nav>.lng>.lngGnb>li:hover>a{
+    color: rgb(45, 190, 26);
+    font-weight: 600;
+}
+.slides{
+    overflow: hidden;
+    position: relative;
+    width: 1920px;
+    height: 440px;
+    margin: 0 auto;
+}
+
+.slides>.slides-line{
+    display: flex;
+    position: absolute;
+    left: 0;
+    left: -1920px;
+    left: -3840px;
+    left: -5760px;
+    left: 0;
+    top: 0;
+    width: 7680px;
+    
+}
+
+.slides>.slides-line>li>a{
+    display: block;
+    width: 1920px;
+    height: 440px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -400px; 
+}
+.slides>.slides-line>li:nth-child(1)>a{text-indent: -9999px;background-image: url(../images/line_banner_01.png);}
+.slides>.slides-line>li:nth-child(2)>a{text-indent: -9999px;background-image: url(../images/line_banner_02.png);}
+.slides>.slides-line>li:nth-child(3)>a{text-indent: -9999px;background-image: url(../images/line_banner_03.png);}
+.slides>.slides-line>li:nth-child(4)>a{text-indent: -9999px;background-image: url(../images/line_banner_04.png);}
+
+
+.slides>.slides-pagination{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 150px;
+    left: 50%;
+    bottom: 30px;
+    margin-left: -75px;
+}
+.slides>.slides-pagination>li>a{
+    display: block;
+    width: 10px;
+    height: 10px;
+    text-indent: -9999px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+.slides>.slides-pagination>li>a:hover{background-color: #7a7a7a;}
+.slides>.slides-pagination>li.on>a{background-color: #7a7a7a;}
+
+
+.line-cont>.clearFixed{
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+}
+.line-cont>.clearFixed>span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.line-cont>.clearFixed>span:nth-child(1)>ul,
+.line-cont>.clearFixed>span:nth-child(3)>ul,
+.line-cont>.clearFixed>span:nth-child(5)>ul{
+    margin-right: 50px;
+}
+.line-cont>.clearFixed>span:nth-child(2)>ul,
+.line-cont>.clearFixed>span:nth-child(4)>ul{
+    margin-left: 50px;
+}
+.line-cont>.clearFixed>span:nth-child(2),
+.line-cont>.clearFixed>span:nth-child(4){
+    flex-direction: row-reverse;
+}
+.line-cont>.clearFixed>span>ol>.tit{
+    font-size: 55px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.line-cont>.clearFixed>span>ol>li:nth-child(2),
+.line-cont>.clearFixed>span>ol>li:nth-child(3){
+    font-size: 18px;
+}
+
+.line-play>.line-play-cont{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1500px;
+    margin: 0 auto 50px;
+}
+.line-play>.line-play-cont>ul{margin-left: 80px; margin-bottom: 60px;}
+.line-play>.line-play-cont>ul:nth-child(1),
+.line-play>.line-play-cont>ul:nth-child(4)
+{margin-left: 320px;}
+.line-play>.line-play-cont>ul:nth-child(5){margin-left: 95px;}
+
+
+.line-play>.line-play-cont>ul>li{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.line-play>.line-play-cont>ul>li:nth-child(2){font-weight: 600;}
+
+.line-play>.line-play-cont>ul:nth-child(1)>li:nth-child(2)>a{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-left: 10px;
+    text-indent: -9999px;
+    background-image: url(../images/sp_line.png);
+    background-position: -881px 0;
+    background-repeat: no-repeat;
+}
+footer{
+    display: block;
+    width: 100%;
+    height: 180px;
+    background-color: rgb(60, 60, 60);
+}
+footer>.line-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 1200px;
+    height: 150px;
+    margin: 0 auto;
+}
+footer>.line-info>ul{
+    display: flex;
+    margin-left: 150px;
+}
+footer>.line-info>ul>li{margin-left: 20px;}
+footer>.line-info>ul>li>a{
+    color: #a7a7a7;
+    font-size: 12px;
+}
+footer>.line-info>ul:nth-child(1){margin-top: 30px;}
+footer>.line-info>ul:nth-child(2)>li:nth-child(1)>a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-indent: -9999px;
+    background-image: url(../images/sp_line.png);
+    background-position: -1049px 0;
+    background-repeat: no-repeat;
+}
+footer>.line-info>ul:nth-child(2)>li:nth-child(2)>a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-indent: -9999px;
+    background-image: url(../images/sp_line.png);
+    background-position: -817px 0;
+    background-repeat: no-repeat;
+}
+footer>.line-info>p{
+    margin-left: 170px;
+    color: #a7a7a7;
+    font-size: 12px;
+}
